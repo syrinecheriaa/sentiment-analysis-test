@@ -32,7 +32,7 @@ In order to use the final model,
 
 
 *   In this work, I chose to deal with the problem a classification task but one can investigate using regression models with thresholds to determine the sentiment in the text.
-*   
+
 *   As in the evaluation notebook, there are some annotation typos in the data. We can use semi-supervised mehtod when we only look into the examples where the model has difficulty deciding whcih category to attribute to the example (for example when the maximum probability is less than 0.8)
 
 * We show that Deberta model showed promessing results compared to xlm-r. If enough ressources are available, one can continue the pre-training of deberta by using the tweets dataset.
