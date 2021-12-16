@@ -7,7 +7,7 @@ This repository contains all the work that I have done in order to propose a sol
 3. An evaluation notebook in which I dig into the results returned by the best trained model
 4. A source code of a python library that can be build and used to detect sentiments in text. 
 https://drive.google.com/file/d/12TIoICzmKOXzmKb-50ZDd4-NtCxLDPCu/view?usp=sharing
-
+5. An 'output.csv' file if the Data directory containing the result of the best model applied to the test dataset.
 
 ## Requirement 
 * If you choose to run the notebooks on google colaboratory, you can just run the cells containing commands for extra-libraries installation
