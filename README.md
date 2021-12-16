@@ -58,10 +58,10 @@ clf.predict(['I loved the look of this neck lace.  I was very surprised that pea
 ## Next steps:
 
 
-*   In this work, I chose to deal with the problem a classification task but one can investigate using regression models with thresholds to determine the sentiment in the text.
+*   In this work, I chose to deal with the problem a classification task but one can investigate regression models with thresholds to determine the sentiment in the text.
 
-*   As in the evaluation notebook, there are some annotation typos in the data. We can use semi-supervised mehtod when we only look into the examples where the model has difficulty deciding whcih category to attribute to the example (for example when the maximum probability is less than 0.8)
+*   As mentionned in the evaluation notebook, there are some annotation typos in the data. We can use semi-supervised mehtods to correct those mistakes by only looking into the examples where the model has difficulty deciding which category to attribute (for example when the maximum probability is less than 0.8)
 
-* We show that Deberta model showed promessing results compared to xlm-r. If enough ressources are available, one can continue the pre-training of deberta by using the tweets dataset.
+* We show that Deberta model has promessing results compared to xlm-r. If enough ressources are available, one can continue the pre-training of deberta on the tweets dataset.
 
-* In this work, no hyperparameters optimization was done in this work. One can use some time in order to fine tune those paramaters such as optimizers' parameters.
+* In this work, no hyperparameters optimization was done. One can use some time in order to fine tune some paramaters such as the optimizers' parameters.
