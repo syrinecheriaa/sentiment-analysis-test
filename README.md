@@ -11,9 +11,8 @@ https://drive.google.com/file/d/12TIoICzmKOXzmKb-50ZDd4-NtCxLDPCu/view?usp=shari
 
 ## Requirement 
 * If you choose to run the notebooks on google colaboratory, you can just run the cells containing commands for extra-libraries installation
-* If you run the notebooks on local machine, you can find all the required libraries in the 'requirement.txt' TODO
+* If you run the notebooks on local machine, you can find all the required libraries in the 'requirement.txt'
 * If you want to use the library please check the part library building  
-*
 ## Models' training 
 
 I fine-tune three language models on the available train dataset. 
