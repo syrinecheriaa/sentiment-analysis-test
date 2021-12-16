@@ -29,6 +29,9 @@ In order to use the final model, you can either build the library and used it or
 
 
 # Build the library 
+The library is developed with python3.7<br />
+It is recommended to create a new environment before building the library.<br />
+
 Once the repository is cloned, you have to download the model weights and save them in the folder sentiment_analysis/sentiment_analysis/data.<br /> 
 You can download the model's weights using this url https://drive.google.com/file/d/12TIoICzmKOXzmKb-50ZDd4-NtCxLDPCu/view?usp=sharing  <br />
 
