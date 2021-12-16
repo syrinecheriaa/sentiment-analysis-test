@@ -1,12 +1,11 @@
 # Sentiment Analysis Test
 
 ## The project
-This repository contains all the work that I have done in order to propose a solution to the sentiment analysis task proposed by Synthesio. It contains:
+This repository contains all the work that I have done in order to propose a solution to the sentiment analysis task proposed by Synthesio. It is composed of:
 1. A data analysis notebook in which I analyse the train dataset.
-2. A training notebook that can be run on google colaboatory or on local machine containing the training process of the different models that I tested. I also present in this notebook the result of the different models and choose the best one. 
+2. A training notebook that can be run on google colaboatory or on local machine containing the training process of the different models that I tested. I also present in this notebook the results of the different models and choose the best one. 
 3. An evaluation notebook in which I dig into the results returned by the best obtained model
 4. A source code of a python library that can be build and used to detect sentiments in text. 
-https://drive.google.com/file/d/12TIoICzmKOXzmKb-50ZDd4-NtCxLDPCu/view?usp=sharing
 5. An 'output.csv' file if the Data directory containing the results of the best model applied to the test dataset.
 
 ## Requirement 
@@ -29,12 +28,11 @@ In order to use the final model, you can either build the library and used it th
 
 ## Build the library 
 The library is developed with python3.7<br />
-It is recommended to create a new environment before building the library.<br />
-
-Once the repository is cloned, you have to download the model weights and save them in the folder sentiment_analysis/sentiment_analysis/data.<br /> 
+It is recommended to create a new environment before building the library. <br />
+1. Clone the repository
+2. Download the model weights and save them in the folder sentiment_analysis/sentiment_analysis/data.<br /> 
 You can download the model's weights using this url https://drive.google.com/file/d/12TIoICzmKOXzmKb-50ZDd4-NtCxLDPCu/view?usp=sharing  <br />
-
-You can build the library by running the "build.sh" file in a terminal.
+3. Build the library by running the "build.sh" file in a terminal.
 ```
 sh build.sh
 ```
