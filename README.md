@@ -2,12 +2,12 @@
 
 ## The project
 This repository contains all the work that I have done in order to propose a solution to the sentiment analysis task proposed by Synthesio. It contains:
-1. A data analysis notebook in which I apply made analysis on the train dataset.
-2. A training notebook that can be run on google colaboatory or on local machine containing the training process of the different model that I tested. I also present in this notebook the result of the different models and choose the best one. 
-3. An evaluation notebook in which I dig into the results returned by the best trained model
+1. A data analysis notebook in which I analyse the train dataset.
+2. A training notebook that can be run on google colaboatory or on local machine containing the training process of the different models that I tested. I also present in this notebook the result of the different models and choose the best one. 
+3. An evaluation notebook in which I dig into the results returned by the best obtained model
 4. A source code of a python library that can be build and used to detect sentiments in text. 
 https://drive.google.com/file/d/12TIoICzmKOXzmKb-50ZDd4-NtCxLDPCu/view?usp=sharing
-5. An 'output.csv' file if the Data directory containing the result of the best model applied to the test dataset.
+5. An 'output.csv' file if the Data directory containing the results of the best model applied to the test dataset.
 
 ## Requirement 
 * If you choose to run the notebooks on google colaboratory, you can just run the cells containing commands for extra-libraries installation
