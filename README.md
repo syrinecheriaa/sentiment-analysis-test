@@ -6,6 +6,7 @@ This repository contains all the work that I have done in order to propose a sol
 2. A training notebook that can be run on google colaboatory or on local machine containing the training process of the different model that I tested. I also present in this notebook the result of the different models and choose the best one. 
 3. An evaluation notebook in which I dig into the results returned by the best trained model
 4. TODO: code source of a python library that can be used in inference
+https://drive.google.com/file/d/12TIoICzmKOXzmKb-50ZDd4-NtCxLDPCu/view?usp=sharing
 
 
 ## Requirement 
