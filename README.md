@@ -19,11 +19,11 @@ I fine-tune three language models on the available train dataset.
 * deberta
 * xlm-r pre-trained and fine-tuned on tweets dataset
 
-I evaluate the previous models on a validation dataset along with a xlm-r pre-trained and fine-tuned on tweets dataset model without fine-tuning. 
-I choose the best model based one based on classification metrics. I restart the fine-tuning of this model on the whole dataset available (train+validation) in order to obtain the final model.
+I evaluate the previous models on a validation dataset along with a an xlm-r model pre-trained and fine-tuned on tweets dataset model without fine-tuning it. 
+I choose the best model based on classification metrics. I restart the fine-tuning of this model on the whole dataset available (train+validation) in order to obtain the final model.
 
 ## Inference
-In order to use the final model, you can either build the library and used it the Inference notebook.
+In order to use the final model, you can either build the library or use the Inference notebook.
 
 
 ## Build the library 
