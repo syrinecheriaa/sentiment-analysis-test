@@ -49,7 +49,7 @@ class Classifier():
                     'shuffle': False,
                     'num_workers': 0
                 }
-        
+        dataset = SentimentAnalysisDataset(content, self.tokenizer)
         return DataLoader(dataset, **params)
 
     def predict(self, content):

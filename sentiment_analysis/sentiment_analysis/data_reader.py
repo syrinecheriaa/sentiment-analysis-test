@@ -1,4 +1,4 @@
-import pandas
+import pandas as pd
 import os
 
 def read_text(input_text):
@@ -11,7 +11,7 @@ def read_text(input_text):
 
     """
     if isinstance(input_text, str):
-        if os.path.isdir(input_text):            
+        if os.path.isfile(input_text):            
             return pd.read_csv(input_text).iloc[:,0].tolist()
         else:
             return [input_text]
