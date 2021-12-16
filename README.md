@@ -1,37 +1,28 @@
 # Sentiment Analysis Test
 
-- [Sentiment Analysis Test](#sentiment-analysis-test)
-  - [🎯 Goals](#user-content--goals)
-  - [📊 Datasets](#user-content--datasets)
-  - [📖 Rules](#user-content--rules)
-  - [👩‍💻 What to do](#user-content--what-to-do)
+## The project
+This repository contains all the work that I have done in order to propose a solution to the sentiment analysis task proposed by Synthesio. It contains:
+1. A data analysis notebook in which I apply made analysis on the train dataset.
+2. A training notebook that can be run on google colaboatory or on local machine containing the training process of the different model that I tested. I also present in this notebook the result of the different models and choose the best one. 
+3. An evaluation notebook in which I dig into the results returned by the best trained model
+4. TODO: code source of a python library that can be used in inference
 
-## 🎯 Goals
 
-We want a multilingual text classifier that predicts the sentiment polarity of a given text.
-Build two models that satisfy this task and choose the best one.
-Please explain in detail each choice you made when building your models and how you choose the best one.
+## Requirement 
+* If you choose to run the notebooks on google colaboratory, you can juste run the cells containing commands for extra-libraries installation
+* If you run the notebooks on local machine, 
+* If you want to use the library please check the part library building # todo 
+*
+## Models' training 
 
-Possible sentiments:
-* `positive`
-* `negative`
-* `neutral`
+I fine-tune three language models on the available train dataset. 
+* xlm-r
+* deberta
+* xlm-r pre-trained and fine-tuned on tweets dataset
 
-## 📊 Datasets
+I evaluate the previous models on a validation dataset along with a xlm-r pre-trained and fine-tuned on tweets dataset model without fine-tuning. 
+I choose the best model based one based on classification metrics. I restart the fine-tuning of this model on the whole dataset available (train+validation) in order to obtain the final model.
 
-* `data/train.csv`: a training dataset containing 25k multilingual texts annotated with their corresponding sentiment
-* `data/test.csv`: a test dataset containing 2500 multilingual texts
+## Inference
+In order to use the final model, 
 
-## 📖 Rules
-
-* Code should be written in Python 3
-* Code should be easily runnable, provide a pip requirements.txt file or a conda environment.yml file describing code dependencies
-* Code should be documented to explain your methodology, choices, and how to run and get results
-* Code should output a file `predictions.csv`, containing the predictions of your best classifier on the test dataset
-
-## 👩‍💻 What to do
-
-1. Fork the project via `github`
-2. Clone your forked repository project https://github.com/YOUR_USERNAME/sentiment-analysis-test
-3. Commit and push your different modifications
-4. Send us a link to your fork once you're done!
