@@ -6,11 +6,11 @@ This repository contains all the work that I have done in order to propose a sol
 2. A training notebook (that can be run on google colaboatory or on local machine) containing the training process of the different models that I tested. I also present in this notebook the results of the different models and choose the best one. 
 3. An evaluation notebook in which I dig into the results returned by the best obtained model
 4. A source code of a python library that can be built and used to detect sentiments in text (can be found in the "sentiment_analysis" folder)
-5. An 'output.csv' file in the Data directory containing the results of the best model applied on the test dataset.
+5. An output file 'predictions.csv' contained in the Data directory with the results of the best model on the test dataset.
 
 ## Requirement 
 * If you choose to run the notebooks on google colaboratory, you can just run the cells containing commands for libraries installation
-* If you run the notebooks on local machine, you can find all the required libraries in the 'requirement.txt'
+* If you run the notebooks on local machine, you can find all the required libraries in the file 'requirement.txt'
 * If you want to use the library please check the part **Build the library**
  
 ## Models' training 
@@ -24,7 +24,7 @@ I evaluate the previous models on a validation dataset along with a an xlm-r mod
 I choose the best model based on classification metrics. I restart the fine-tuning of this model on the whole dataset available (train+validation) in order to obtain the final model.
 
 ## Inference
-In order to use the final model, you can either build the library or use the Inference notebook.
+In order to use the final model, you can either build the library or use the Inference.ipynb notebook.
 
 
 ## Build the library 
@@ -60,9 +60,9 @@ clf.predict(['I loved the look of this neck lace.  I was very surprised that pea
 ## Next steps:
 
 
-*   In this work, I chose to deal with the problem a classification task, but one can investigate regression models with thresholds to determine the sentiment in the text.
+*   In this work, I chose to deal with the problem as a classification task, but one can investigate regression models with thresholds to determine the sentiment in the text.
 
-*   As mentioned in the evaluation notebook, there are some annotation typos in the data. We can use semi-supervised methods to correct those mistakes by only looking into the examples where the model has difficulty deciding which category to attribute (for example when the maximum probability is less than 0.8)
+*   As mentioned in the evaluation notebook, there are some annotation erros in the data. We can use semi-supervised methods to correct those mistakes by only looking into the examples where the model has difficulty deciding which category to attribute (for example when the maximum probability is less than 0.8)
 
 * We show that Deberta model has promising  results compared to xlm-r. If enough resources are available, one can continue the pre-training of deberta on the tweets dataset.
 
